@@ -20,6 +20,6 @@ int main() {
             std:: cout << "\n\nIngrese, por favor, un número entre -5 y +5: \n\n";
             std:: cin >> calificacionPrograma ;
         }
-           std:: cout << std::endl <<" La calificación es  .... "<<calificacionPrograma+3 << std::endl;
+           std:: cout << std::endl <<" La calificación es  .... "<<calificacionPrograma << std::endl;
     return 0;
 }
