@@ -1,15 +1,21 @@
-// numeric_limits example
-#include <iostream>     // std::cout
-#include <limits>       // std::numeric_limits
-using namespace std;
-
-int main () {
-  std::cout << boolalpha;
-  std::cout << "Minimum value for int: " << numeric_limits<long int>::min() << '\n';
-  std::cout << "Maximum value for int: " << numeric_limits<long int>::max() << '\n';
-  std::cout << "int is signed: " << numeric_limits<long int>::is_signed << '\n';
-  std::cout << "Non-sign bits in int: " << numeric_limits<long int>::digits << '\n';
-  std::cout << "int has infinity: " << numeric_limits<long int>::has_infinity << '\n';
-  return 0;
+#include <stdio.h>
+#include <float.h> 
+#include <math.h>
+ 
+int main(void)
+{
+    printf("FLT_RADIX    = %d\n", FLT_RADIX);
+    printf("DECIMAL_DIG  = %d\n", DECIMAL_DIG);
+    printf("FLT_MIN      = %e\n", FLT_MIN);
+    printf("FLT_MAX      = %e\n", FLT_MAX);
+    printf("FLT_EPSILON  = %e\n", FLT_EPSILON);
+    printf("FLT_DIG      = %d\n", FLT_DIG);
+    printf("FLT_MANT_DIG = %d\n", FLT_MANT_DIG);
+    printf("FLT_MIN_EXP  = %d\n",  FLT_MIN_EXP);
+    printf("FLT_MIN_10_EXP  = %d\n",  FLT_MIN_10_EXP);
+    printf("FLT_MAX_EXP     = %d\n",  FLT_MAX_EXP);
+    printf("FLT_MAX_10_EXP  = %d\n",  FLT_MAX_10_EXP);
+    printf("FLT_ROUNDS      = %d\n",  FLT_ROUNDS);
+    printf("FLT_EVAL_METHOD = %d\n",  FLT_EVAL_METHOD);
+   // printf("FLT_HAS_SUBNORM = %d\n",  FLT_HAS_SUBNORM);
 }
-
