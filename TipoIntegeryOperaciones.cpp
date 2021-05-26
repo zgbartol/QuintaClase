@@ -41,11 +41,6 @@ int main() {
     std::cout <<  "\n"<<long(numeritomasgrande)<< "\n"<< resultadoentero << "\n";
     
     std::cout << numerazodegrande << "\n"<< numeroentero << "\n"<< enterocorto<< "\n";
-    
-    
-    
-    
-    
     /*
     Ahora vamos a trabajar un poco con los números double que corresponden en matemáticas a 
     los números racionales. Desde el punto de vista rigurosamente matemático no es posible 
@@ -53,9 +48,9 @@ int main() {
     infinita de memoria. 
     */
     
-    long double racional{99.97};
+    long double racional{99.97d};
     
-    long double grandote{2.244e45};
+    long double grandote{2.244e45d};
     
     double resultado;
     
