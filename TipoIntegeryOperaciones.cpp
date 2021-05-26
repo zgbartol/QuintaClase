@@ -1,25 +1,68 @@
 #include <iostream>
-#include <string.h>
-// using namespace std; 
-// comentamos esto para invocar los objetos diciendo la 
-// biblioteca de donde proviene el objeto cada vez que lo utilizamos
-// veamos como se complica la notacion.
-// creamos una variable llamado calificacionPrograma inicializándola con -5
-// vamos a ver todos los tipos predefinidos en C++
-//------------------------------------------------
 
 int main() {
-    auto MensajeInicial {"\nBienvenidos a la encuesta de calidad\n"};
-    // auto es una palabra clave que establece el tipo de datos de la variable a partir de su contexto
-   // auto calificacionPrograma{-6}; esta es una manera moderna de definir tipos de variables implicitamente
-    auto calificacionPrograma{6};
-   // int calificacionPrograma;
-    std::cout << MensajeInicial << "\n\t\t\tEn una escala de -5 a +5. ¿Cómo evaluaría este programa?\n" ;
-    while (calificacionPrograma > 5 || calificacionPrograma < -5 )
-        {
-            std:: cout << "\n\nIngrese, por favor, un número entre -5 y +5: \n\n";
-            std:: cin >> calificacionPrograma ;
-        }
-           std:: cout << std::endl <<" La calificación es  .... "<<calificacionPrograma+3 << std::endl;
+    /*
+    Primeramente veamos la familia de los números enteros, 
+    que son los números con que contamos tanto para
+    atrás como para adelante
+    */
+    
+    char letra{'a'}, numerito{127}; 
+    // se puede utilizar char para almacenar enteros pequeños
+    
+    
+    signed char numeroneg{-128}; 
+    //como el anterior, pero especifica que hay números negativos
+    
+    
+    unsigned char numeritomasgrande {255}; 
+    //utilizo todos los bits y puedo cargar números más grandes
+    
+        
+    signed short int enterocorto {-32768}; 
+    // entero corto, 16 bits para almacenarlo
+
+
+    signed int numeroentero{-2147483648};
+    
+    // entero de 4 bytes
+    
+    signed long int numeroenterogrande{-9223372036854775807};
+    unsigned long int numerazodegrande{1844674413709551614},resultadoentero{0};
+    
+    letra = 'b';
+    
+    resultadoentero = numerazodegrande + numeroenterogrande+ numeroentero + enterocorto;
+    
+    numeritomasgrande = resultadoentero; //perdida de datos!!!
+    
+    
+    
+    std::cout <<  "\n"<<long(numeritomasgrande)<< "\n"<< resultadoentero << "\n";
+    
+    std::cout << numerazodegrande << "\n"<< numeroentero << "\n"<< enterocorto<< "\n";
+    
+    
+    
+    
+    
+    /*
+    Ahora vamos a trabajar un poco con los números double que corresponden en matemáticas a 
+    los números racionales. Desde el punto de vista rigurosamente matemático no es posible 
+    almacenar números reales en una computadora, porque para ello debería tener una capacidad
+    infinita de memoria. 
+    */
+    
+    long double racional{99.97};
+    
+    long double grandote{2.244e45};
+    
+    double resultado;
+    
+    resultado = grandote*racional;
+    
+    std::cout<<"\n"<<resultado<< "\n"<<grandote/resultado<<"\n"<< racional/grandote;
+    
+    
     return 0;
 }
