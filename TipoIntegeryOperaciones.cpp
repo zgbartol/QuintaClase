@@ -57,6 +57,9 @@ int main() {
     resultado = grandote*racional;
     
     std::cout<<"\n"<<resultado<< "\n"<<grandote/resultado<<"\n"<< racional/grandote;
+
+    std::cout<<"\n"<<resultado/numerazodegrande*numeroentero*enterocorto;
+    std::cout << "\n"<<grandote/resultado/enterocorto*numeroentero<<"\n"; 
     
     
     return 0;
