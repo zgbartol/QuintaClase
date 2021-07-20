@@ -7,10 +7,13 @@ int main() {
     cout  << endl;
     do
     {
-        cout << endl << "Ingrese el diámetro"<< endl;
+        cout << endl << "Ingrese el diámetro, 0 para salir  ";
         cin >> diametro;
+        if (!diametro) {
+            cout << endl << "Gracias por usar este programa "<< endl;
+        } else {
         cout << endl << "El largo de la circunferencia es "<< diametro * pi << endl;
-
-    } while(diametro!=0);
+        }
+    } while(diametro);
 	return 0;
 }
