@@ -9,7 +9,7 @@ int main() {
 
     //Loop principal que cifra en modo Cesar la cadenaIN
     for (int i=0; i<80;i++) {
-        strOUT[i] = (strIN[i]-3)%256;
+        strOUT[i] = (strIN[i]+3)%256;
         if (strIN[i]=='.') i=80; 
         // fuerzo la salida del for, no esta muy bien, esto quiere decir que es un while
         // Podria ser while (strIN[i]!='.') {strOUT[i] = (strIN[i]+3)%256;i++}
